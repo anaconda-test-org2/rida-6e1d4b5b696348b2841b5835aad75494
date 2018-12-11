@@ -15,6 +15,9 @@ commands:
     windows: python %PROJECT_DIR%\run_with_env_vars.py
 
 
+  my-command:
+    unix: python ${PROJECT_DIR}/test.py
+    supports_http_options: true
 channels: []
 packages: []
 platforms:
@@ -30,6 +33,6 @@ env_specs:
 
 variables:
   INTEGRATION_TEST_ANACONDA:
-    default: 'anaconda'
+    default: anaconda
   INTEGRATION_TEST_VERSION:
-    default: 'test'
+    default: test
